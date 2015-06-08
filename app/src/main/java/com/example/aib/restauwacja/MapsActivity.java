@@ -28,7 +28,7 @@ public class MapsActivity extends Activity {
 
         map = mapFragment.getMap();
 
-        LatLng coordinates = new LatLng(54.399550, 18.568836);
+        LatLng coordinates = new LatLng(50.2264425,18.8068379);
 
         int zoom = 15;
 
