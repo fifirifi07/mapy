@@ -1,0 +1,118 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aib.restauwacja.RestaurationDetails"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="20dp">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="50dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Mc Donalds"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:textSize="25dp"
+            android:textColor="#BE1E2D"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:text="Opis restauracji: Restauracja Valdi Plus
+            przyciąga niepowtarzalnym klimatem i doskonałym jedzeniem.
+            Nasi kucharze oraz kelnerzy zadbają o Państwa dobry nastrój.
+            Potrawy przyrządzane od podstaw w oparciu o naturalne i świeże
+            produkty zaspokajają od lat podniebienia naszych gości.
+           "
+            android:textColor="#006838"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zarezerwuj stolik"
+        android:id="@+id/makeButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#BE1E2D"
+        android:textColor="#ffffff"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/commentheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:textColor="#BE1E2D"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/newcommentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/newcomment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".70"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:gravity="top|left"
+            android:hint="Your comment"
+            android:textColorHint="#006838"
+            android:textColor="#006838"/>
+        <Button
+            android:id="@+id/commentbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Send"
+            android:background="#BE1E2D"
+            android:textColor="#ffffff"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3.0"
+        android:stepSize="1.0"
+        />
+    <ListView
+        android:id="@+id/commentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
+</ScrollView>

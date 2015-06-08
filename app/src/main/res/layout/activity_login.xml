@@ -1,0 +1,111 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.aib.restauwacja.Login"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Zaloguj się:"
+            android:gravity="left"
+            android:textColor="#006838"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Login"
+            android:textColorHint="#BE1E2D"
+            android:textColor="#BE1E2D"
+            android:id="@+id/emailTxt"/>
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Hasło"
+            android:textColorHint="#BE1E2D"
+            android:textColor="#BE1E2D"
+            android:id="@+id/passwordTxt"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="zaloguj"
+            android:layout_marginTop="20dp"
+            android:background="#BE1E2D"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:id="@+id/loginBtn"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"/>
+</LinearLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Zaloguj przez facebooka"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:id="@+id/facebookBtn"
+            android:background="#BE1E2D"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="20dp"
+            android:text="Lub załóż konto:"
+            android:textColor="#006838"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="załóż konto"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/registrationBtn"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:background="#BE1E2D"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+

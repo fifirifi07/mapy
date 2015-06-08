@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aib.restauwacja.Registration"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Załóż konto:"
+            android:textColor="#006838"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="E-mail"
+            android:textColorHint="#BE1E2D"
+            android:textColor="#BE1E2D"
+            android:id="@+id/emailTxt"/>
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Hasło"
+            android:textColorHint="#BE1E2D"
+            android:textColor="#BE1E2D"
+            android:inputType="textPassword"
+            android:id="@+id/passwordTxt"/>
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Powtórz hasło"
+            android:textColorHint="#BE1E2D"
+            android:textColor="#BE1E2D"
+            android:inputType="textPassword"
+            android:id="@+id/passwordTxt2"/>
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Imię"
+            android:textColorHint="#BE1E2D"
+            android:textColor="#BE1E2D"
+            android:id="@+id/imieTxt"/>
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Nazwisko"
+            android:textColorHint="#BE1E2D"
+            android:id="@+id/nazwiskoTxt"/>
+
+    </LinearLayout>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="25dp"
+            android:text="załóż konto"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:background="#BE1E2D"
+            android:id="@+id/zalozKontoBtn"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+    </HorizontalScrollView>
+</ScrollView>
