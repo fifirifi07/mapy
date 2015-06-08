@@ -78,7 +78,7 @@
         <Button
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:text="Zaloguj przez facebooka"
+            android:text="Mapa restauracji"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
